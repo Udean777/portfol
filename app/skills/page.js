@@ -1,12 +1,7 @@
 import React from "react";
 import NavPills from "../components/NavPills";
 import { FaHtml5, FaBootstrap, FaCss3Alt, FaJs } from "react-icons/fa";
-import {
-  TbBrandTailwind,
-  TbBrandVite,
-  TbBrandNextjs,
-  TbBrandLaravel,
-} from "react-icons/tb";
+import { TbBrandTailwind, TbBrandVite, TbBrandNextjs } from "react-icons/tb";
 import { RiReactjsFill } from "react-icons/ri";
 import "animate.css";
 import Navbar from "../components/Navbar";
