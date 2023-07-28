@@ -19,7 +19,7 @@ export default function Projects() {
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30 ">
               <img
                 loading="lazy"
-                className="w-full rounded-sm h-24"
+                className="w-full rounded-sm lg:h-24"
                 src="/project.jpeg"
                 alt="Card Image"
               />
@@ -37,7 +37,7 @@ export default function Projects() {
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30">
               <img
                 loading="lazy"
-                className="w-full rounded-sm h-24"
+                className="w-full rounded-sm lg:h-24"
                 src="/projects2.png"
                 alt="Card Image"
               />
@@ -51,11 +51,11 @@ export default function Projects() {
             </div>
           </Link>
 
-          <Link href="https://udean.vercel.app/" target="__blank">
+          <Link href="https://sajudin.vercel.app/" target="__blank">
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30">
               <img
                 loading="lazy"
-                className="w-full rounded-sm h-24"
+                className="w-full rounded-sm lg:h-24"
                 src="/project3.png"
                 alt="Card Image"
               />
@@ -75,7 +75,7 @@ export default function Projects() {
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30">
               <img
                 loading="lazy"
-                className="w-full rounded-sm h-24"
+                className="w-full rounded-sm lg:h-24"
                 src="/project4.png"
                 alt="Card Image"
               />
