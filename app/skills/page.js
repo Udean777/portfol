@@ -1,7 +1,18 @@
 import React from "react";
 import NavPills from "../components/NavPills";
-import { FaHtml5, FaBootstrap, FaCss3Alt, FaJs } from "react-icons/fa";
-import { TbBrandTailwind, TbBrandVite, TbBrandNextjs } from "react-icons/tb";
+import {
+  FaHtml5,
+  FaBootstrap,
+  FaCss3Alt,
+  FaJs,
+  FaNodeJs,
+} from "react-icons/fa";
+import {
+  TbBrandTailwind,
+  TbBrandVite,
+  TbBrandNextjs,
+  TbBrandMongodb,
+} from "react-icons/tb";
 import { RiReactjsFill } from "react-icons/ri";
 import "animate.css";
 import Navbar from "../components/Navbar";
@@ -22,7 +33,7 @@ export default function Skills() {
             >
               <FaHtml5 className="m-auto w-auto py-5" size={150} />
               <p className="flex justify-center pb-2 font-sans font-bold">
-                Expert🔥
+                HTML
               </p>
             </div>
 
@@ -34,7 +45,7 @@ export default function Skills() {
             >
               <FaCss3Alt className="m-auto w-auto py-5" size={150} />
               <p className="flex justify-center pb-2 font-sans font-bold">
-                Expert🔥
+                CSS
               </p>
             </div>
 
@@ -46,7 +57,19 @@ export default function Skills() {
             >
               <FaJs className="m-auto w-auto py-5" size={150} />
               <p className="flex justify-center pb-2 font-sans font-bold">
-                Intermediate💙
+                JavaScript
+              </p>
+            </div>
+
+            <div
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
+           dark:text-white dark:hover:text-green-600  bg-transparent dark:bg-transparent
+            dark:hover:bg-transparent hover:bg-transparent hover:text-green-600 border-2
+             border-zinc-500 dark:border-white dark:hover:border-green-600 hover:border-green-600 transition ease-in"
+            >
+              <FaNodeJs className="m-auto w-auto py-5" size={150} />
+              <p className="flex justify-center pb-2 font-sans font-bold">
+                NodeJS
               </p>
             </div>
           </div>
@@ -67,7 +90,7 @@ export default function Skills() {
             >
               <FaBootstrap className="m-auto w-auto py-5" size={150} />
               <p className="flex justify-center pb-2 font-sans font-bold">
-                Expert🔥
+                Bootstrap
               </p>
             </div>
 
@@ -79,7 +102,7 @@ export default function Skills() {
             >
               <TbBrandTailwind className="m-auto w-auto py-5" size={150} />
               <p className="flex justify-center pb-2 font-sans font-bold">
-                Expert🔥
+                Tailwind CSS
               </p>
             </div>
 
@@ -91,7 +114,7 @@ export default function Skills() {
             >
               <TbBrandNextjs className="m-auto w-auto py-5" size={150} />
               <p className="flex justify-center pb-2 font-sans font-bold">
-                Beginner😁
+                NextJS
               </p>
             </div>
 
@@ -103,7 +126,7 @@ export default function Skills() {
             >
               <RiReactjsFill className="m-auto w-auto py-5" size={150} />
               <p className="flex justify-center pb-2 font-sans font-bold">
-                Intermediate💙
+                React JS
               </p>
             </div>
 
@@ -115,7 +138,19 @@ export default function Skills() {
             >
               <TbBrandVite className="m-auto w-auto py-5" size={150} />
               <p className="flex justify-center pb-2 font-sans font-bold">
-                Intermediate💙
+                Vite
+              </p>
+            </div>
+
+            <div
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
+           dark:text-white dark:hover:text-green-500  bg-transparent dark:bg-transparent
+            dark:hover:bg-transparent hover:bg-transparent hover:text-green-500 border-2
+             border-zinc-500 dark:border-white dark:hover:border-green-500 hover:border-green-500 transition ease-in"
+            >
+              <TbBrandMongodb className="m-auto w-auto py-5" size={150} />
+              <p className="flex justify-center pb-2 font-sans font-bold">
+                MongoDB
               </p>
             </div>
           </div>
