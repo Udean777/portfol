@@ -51,7 +51,7 @@ export default function Projects() {
             </div>
           </Link>
 
-          <Link href="https://sajudin.vercel.app/" target="__blank">
+          <Link href="https://udean.vercel.app/" target="__blank">
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30">
               <img
                 loading="lazy"
