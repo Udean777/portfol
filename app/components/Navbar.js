@@ -64,13 +64,6 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex items-center dark:text-white">
-              <a
-                href="CV.pdf"
-                target="_blank"
-                className="border-2 border-blue-500 text-blue-500 p-1 rounded-md hover:scale-105 transition-all ease-in-out dark:text-blue-200 dark:border-blue-200"
-              >
-                Download My CV
-              </a>
               <DarkModeToggle />
             </div>
           </div>
