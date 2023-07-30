@@ -13,6 +13,7 @@ import {
   TbBrandNextjs,
   TbBrandMongodb,
 } from "react-icons/tb";
+import { SiExpress } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import "animate.css";
 import Navbar from "../components/Navbar";
@@ -26,7 +27,7 @@ export default function Skills() {
         <div className="flex justify-center lg:justify-start font-sans">
           <div className="justify-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
             <div
-              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl hover:scale-105
            dark:text-white hover:text-orange-600 dark:hover:text-orange-600  bg-transparent dark:bg-transparent
             hover:bg-transparent  border-2 
              border-zinc-500 dark:border-white dark:hover:border-orange-600 hover:border-orange-600 transition ease-in"
@@ -38,7 +39,7 @@ export default function Skills() {
             </div>
 
             <div
-              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl hover:scale-105
            dark:text-white  bg-transparent dark:bg-transparent dark:hover:text-blue-600 
             dark:hover:bg-transparent hover:bg-transparent hover:text-blue-600 border-2
              border-zinc-500 dark:border-white dark:hover:border-blue-600 hover:border-blue-600 transition ease-in"
@@ -50,7 +51,7 @@ export default function Skills() {
             </div>
 
             <div
-              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl hover:scale-105
            dark:text-white dark:hover:text-yellow-400  bg-transparent dark:bg-transparent
             dark:hover:bg-transparent hover:bg-transparent hover:text-yellow-500 border-2
              border-zinc-500 dark:border-white dark:hover:border-yellow-500 hover:border-yellow-500 transition ease-in"
@@ -62,7 +63,7 @@ export default function Skills() {
             </div>
 
             <div
-              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl hover:scale-105
            dark:text-white dark:hover:text-green-600  bg-transparent dark:bg-transparent
             dark:hover:bg-transparent hover:bg-transparent hover:text-green-600 border-2
              border-zinc-500 dark:border-white dark:hover:border-green-600 hover:border-green-600 transition ease-in"
@@ -83,7 +84,7 @@ export default function Skills() {
         <div className="flex justify-center lg:justify-start font-sans">
           <div className="justify-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
             <div
-              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl hover:scale-105
            dark:text-white dark:hover:text-purple-600  bg-transparent dark:bg-transparent
             dark:hover:bg-transparent hover:bg-transparent hover:text-purple-600 border-2
              border-zinc-500 dark:border-white dark:hover:border-purple-600 hover:border-purple-600 transition ease-in"
@@ -95,7 +96,7 @@ export default function Skills() {
             </div>
 
             <div
-              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl hover:scale-105
            dark:text-white dark:hover:text-blue-600  bg-transparent dark:bg-transparent
             dark:hover:bg-transparent hover:bg-transparent hover:text-blue-600 border-2
              border-zinc-500 dark:border-white dark:hover:border-blue-600 hover:border-blue-600 transition ease-in"
@@ -107,19 +108,19 @@ export default function Skills() {
             </div>
 
             <div
-              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl hover:scale-105
            dark:text-white dark:hover:text-gray-300 bg-transparent dark:bg-transparent
             dark:hover:bg-transparent hover:bg-transparent hover:text-gray-500 border-2
              border-zinc-500 dark:border-white dark:hover:border-gray-300 hover:border-gray-500 transition ease-in"
             >
               <TbBrandNextjs className="m-auto w-auto py-5" size={150} />
               <p className="flex justify-center pb-2 font-sans font-bold">
-                NextJS
+                Next JS
               </p>
             </div>
 
             <div
-              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl hover:scale-105
            dark:text-white dark:hover:text-blue-500  bg-transparent dark:bg-transparent
             dark:hover:bg-transparent hover:bg-transparent hover:text-blue-500 border-2
              border-zinc-500 dark:border-white dark:hover:border-blue-500 hover:border-blue-500 transition ease-in"
@@ -131,7 +132,7 @@ export default function Skills() {
             </div>
 
             <div
-              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl hover:scale-105
            dark:text-white dark:hover:text-indigo-500  bg-transparent dark:bg-transparent
             dark:hover:bg-transparent hover:bg-transparent hover:text-indigo-500 border-2
              border-zinc-500 dark:border-white dark:hover:border-indigo-500 hover:border-indigo-500 transition ease-in"
@@ -143,7 +144,7 @@ export default function Skills() {
             </div>
 
             <div
-              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl hover:scale-105
            dark:text-white dark:hover:text-green-500  bg-transparent dark:bg-transparent
             dark:hover:bg-transparent hover:bg-transparent hover:text-green-500 border-2
              border-zinc-500 dark:border-white dark:hover:border-green-500 hover:border-green-500 transition ease-in"
@@ -151,6 +152,18 @@ export default function Skills() {
               <TbBrandMongodb className="m-auto w-auto py-5" size={150} />
               <p className="flex justify-center pb-2 font-sans font-bold">
                 MongoDB
+              </p>
+            </div>
+
+            <div
+              className="w-40 my-5 overflow-hidden shadow-sm rounded-3xl hover:scale-105 
+           dark:text-white dark:hover:text-pink-500  bg-transparent dark:bg-transparent
+            dark:hover:bg-transparent hover:bg-transparent hover:text-pink-500 border-2
+             border-zinc-500 dark:border-white dark:hover:border-pink-500 hover:border-pink-500 transition ease-in"
+            >
+              <SiExpress className="m-auto w-auto py-5" size={150} />
+              <p className="flex justify-center pb-2 font-sans font-bold">
+                Express Js
               </p>
             </div>
           </div>
