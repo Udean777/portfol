@@ -35,7 +35,7 @@ const NavPills = ({ tabs }) => {
   };
 
   return (
-    <div className="flex justify-center md:py-20 lg:py-20 font-sans">
+    <div className="flex justify-center md:py-5 lg:py-5 font-sans">
       <div className="w-95 md:w-98 lg:w-100">
         <div className="py-10">
           <h1 className="font-bold border-l-4 border-blue-500 text-3xl sm:text-4xl md:text-3xl">
