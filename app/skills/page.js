@@ -173,9 +173,9 @@ export default function Skills() {
   ];
 
   return (
-    <main className="min-h-screen overflow-hidden">
+    <main className="min-h-screen">
       <Navbar />
-      <div className="dark:text-white overflow-hidden">
+      <div className="dark:text-white">
         <div className="animate__animated animate__fadeInDown">
           <NavPills tabs={tabs} />
         </div>
