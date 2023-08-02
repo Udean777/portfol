@@ -16,7 +16,6 @@ import {
 import { SiExpress } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import "animate.css";
-import Navbar from "../components/Navbar";
 
 export default function Skills() {
   const tabs = [
@@ -174,7 +173,6 @@ export default function Skills() {
 
   return (
     <main className="min-h-screen">
-      <Navbar />
       <div className="dark:text-white">
         <div className="animate__animated animate__fadeInDown">
           <NavPills tabs={tabs} />
