@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 import {
   FaGithub,
   FaWhatsapp,
@@ -11,6 +12,8 @@ import Link from "next/link";
 export default function page() {
   return (
     <div className="min-h-screen">
+      <Navbar />
+
       <div className="m-auto py-5 md:py-10 lg:py-10 max-w-6xl px-4 sm:px-6 md:px-8 animate__animated animate__fadeInDown text-stone-800 dark:text-stone-200 overflow-hidden">
         <h1 className="font-bold border-l-4 border-blue-500 text-3xl sm:text-4xl md:text-3xl mb-6 sm:mb-8">
           CONTACT

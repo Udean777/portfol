@@ -1,6 +1,5 @@
 import Particle from "./components/Particles";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 
 export const metadata = {
   title: `Sajudin Ma'ruf`,
@@ -11,7 +10,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-gradient-to-b from-slate-300 to-slate-200 dark:bg-gradient-to-b dark:from-slate-600 dark:to-slate-500">
-        <Navbar />
         <Particle />
         {children}
       </body>
