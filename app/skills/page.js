@@ -16,6 +16,7 @@ import {
 import { SiExpress } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import "animate.css";
+import Navbar from "../components/Navbar";
 
 export default function Skills() {
   const tabs = [
