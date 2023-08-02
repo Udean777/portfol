@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: `Sajudin Ma'ruf`,
-  description: "This web is made by Udean",
+  description: "This web is made by Udean777",
 };
 
 export default function RootLayout({ children }) {
