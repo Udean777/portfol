@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
+import { TbBrandMongodb, TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
+import { FaBootstrap, FaNodeJs, FaReact } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
 import "animate.css";
 
 export default function Projects() {
@@ -19,16 +22,19 @@ export default function Projects() {
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30 ">
               <img
                 loading="lazy"
-                className="w-full rounded-sm lg:h-24"
+                className="w-full rounded-sm "
                 src="/project.jpeg"
                 alt="Card Image"
               />
               <div className="px-6 py-4">
                 <div className="font-bold text-md mb-2">My First Portfolio</div>
-                <p className="text-gray-700 dark:text-gray-100 text-sm">
-                  I made my first ever portfolio website, using only bootstrap +
-                  vanilla css.
-                </p>
+                <div className="flex gap-2">
+                  {" "}
+                  <FaBootstrap
+                    className="text-purple-600 p-1 rounded-full dark:bg-slate-50"
+                    size={30}
+                  />
+                </div>
               </div>
             </div>
           </Link>
@@ -37,16 +43,27 @@ export default function Projects() {
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30">
               <img
                 loading="lazy"
-                className="w-full rounded-sm lg:h-24"
+                className="w-full rounded-sm "
                 src="/projects2.png"
                 alt="Card Image"
               />
               <div className="px-6 py-4">
                 <div className="font-bold text-md mb-2">Clone Landing Page</div>
-                <p className="text-gray-700 dark:text-gray-100 text-sm">
-                  I'm cloning JKT48 Official website Landing Page (Not
-                  responsive yet).
-                </p>
+                <div className="flex gap-2">
+                  {" "}
+                  <TbBrandTailwind
+                    className="text-blue-500 p-1 rounded-full dark:bg-slate-50"
+                    size={30}
+                  />
+                  <FaReact
+                    className="text-blue-600 dark:bg-slate-50 p-1 rounded-full"
+                    size={30}
+                  />
+                  <TbBrandNextjs
+                    className="text-slate-800 dark:bg-slate-50 dark:text-slate-800 p-1 rounded-full"
+                    size={30}
+                  />
+                </div>
               </div>
             </div>
           </Link>
@@ -55,7 +72,7 @@ export default function Projects() {
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30">
               <img
                 loading="lazy"
-                className="w-full rounded-sm lg:h-24"
+                className="w-full rounded-sm "
                 src="/project3.png"
                 alt="Card Image"
               />
@@ -63,33 +80,54 @@ export default function Projects() {
                 <div className="font-bold text-md mb-2">
                   My Second Portfolio
                 </div>
-                <p className="text-gray-700 dark:text-gray-100 text-sm">
-                  I made my second portfolio, using React + Next JS + Tailwind
-                  CSS.
-                </p>
+                <div className="flex gap-2">
+                  {" "}
+                  <TbBrandTailwind
+                    className="text-blue-500 p-1 rounded-full dark:bg-slate-50"
+                    size={30}
+                  />
+                  <FaReact
+                    className="text-blue-600 dark:bg-slate-50 p-1 rounded-full"
+                    size={30}
+                  />
+                  <TbBrandNextjs
+                    className="text-slate-800 dark:bg-slate-50 dark:text-slate-800 p-1 rounded-full"
+                    size={30}
+                  />
+                </div>
               </div>
             </div>
           </Link>
 
-          <Link
-            href="https://github.com/Udean777/todoapp-sourcecode"
-            target="__blank"
-          >
+          <Link href="https://github.com/Udean777/todo-deploy" target="__blank">
             <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30">
               <img
                 loading="lazy"
-                className="w-full rounded-sm lg:h-24"
+                className="w-full rounded-sm "
                 src="/project4.png"
                 alt="Card Image"
               />
               <div className="px-6 py-4">
-                <div className="font-bold text-md mb-2">
-                  To Do List <span className="font-normal">(In progress)</span>
+                <div className="font-bold text-md mb-2">To Do List</div>
+                <div className="flex gap-2">
+                  {" "}
+                  <TbBrandMongodb
+                    className="bg-green-600 p-1 rounded-full text-slate-50"
+                    size={30}
+                  />
+                  <SiExpress
+                    className="bg-slate-800 text-slate-50 dark:bg-slate-50 dark:text-slate-800 p-1 rounded-full"
+                    size={30}
+                  />
+                  <FaReact
+                    className="text-blue-600 dark:bg-slate-50 p-1 rounded-full"
+                    size={30}
+                  />
+                  <FaNodeJs
+                    className="text-green-500 bg-slate-500 p-1 rounded-full"
+                    size={30}
+                  />
                 </div>
-                <p className="text-gray-700 dark:text-gray-100 text-sm">
-                  I made Todolist website, using React + Vite + Tailwind CSS &
-                  MongoDB for DBMS.
-                </p>
               </div>
             </div>
           </Link>

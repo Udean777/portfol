@@ -37,7 +37,7 @@ export default function Hero() {
                 target="_blank"
                 className="border-2 border-blue-500 text-blue-500 p-1 rounded-md dark:text-blue-200 dark:border-blue-200"
               >
-                My CV
+                My Resume
               </a>
             </div>
           </div>
