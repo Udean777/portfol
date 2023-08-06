@@ -1,10 +1,118 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Link from "next/link";
+import ProjectCard from "./ProjectCard";
 import { TbBrandMongodb, TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
-import { FaBootstrap, FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaBootstrap, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import "animate.css";
+
+const projects = [
+  {
+    title: "My First Portfolio",
+    imageSrc: "/project.jpeg",
+    href: "https://udean777.github.io/portfoliolama/",
+    icon: [
+      <FaBootstrap
+        key="1"
+        className="text-purple-600 p-1 rounded-full dark:bg-slate-50"
+        size={30}
+      />,
+    ],
+  },
+  {
+    title: "Clone Landing Page",
+    imageSrc: "/projects2.png",
+    href: "https://jeketi-web.vercel.app/",
+    icon: [
+      <TbBrandTailwind
+        key="1"
+        className="text-blue-500 p-1 rounded-full dark:bg-slate-50"
+        size={30}
+      />,
+      <FaReact
+        key="2"
+        className="text-blue-600 dark:bg-slate-50 p-1 rounded-full"
+        size={30}
+      />,
+      <TbBrandNextjs
+        key="3"
+        className="text-slate-800 dark:bg-slate-50 dark:text-slate-800 p-1 rounded-full"
+        size={30}
+      />,
+    ],
+  },
+  {
+    title: "My Second Portfolio",
+    imageSrc: "/project3.png",
+    href: "https://udean.vercel.app/",
+    icon: [
+      <TbBrandTailwind
+        key="1"
+        className="text-blue-500 p-1 rounded-full dark:bg-slate-50"
+        size={30}
+      />,
+      <FaReact
+        key="2"
+        className="text-blue-600 dark:bg-slate-50 p-1 rounded-full"
+        size={30}
+      />,
+      <TbBrandNextjs
+        key="3"
+        className="text-slate-800 dark:bg-slate-50 dark:text-slate-800 p-1 rounded-full"
+        size={30}
+      />,
+    ],
+  },
+  {
+    title: "To Do List",
+    imageSrc: "/unfinished.png",
+    href: "https://github.com/Udean777/todo-deploy",
+    icon: [
+      <TbBrandMongodb
+        key="1"
+        className="bg-green-600 p-1 rounded-full text-slate-50"
+        size={30}
+      />,
+      <SiExpress
+        key="2"
+        className="bg-slate-800 text-slate-50 dark:bg-slate-50 dark:text-slate-800 p-1 rounded-full"
+        size={30}
+      />,
+      <FaReact
+        key="3"
+        className="text-blue-600 dark:bg-slate-50 p-1 rounded-full"
+        size={30}
+      />,
+      <FaNodeJs
+        key="4"
+        className="text-green-500 bg-slate-500 p-1 rounded-full"
+        size={30}
+      />,
+    ],
+  },
+  {
+    title: "CRUD w/NextJS",
+    imageSrc: "/unfinished.png",
+    href: "https://github.com/Udean777/next-crud",
+    icon: [
+      <TbBrandMongodb
+        key="1"
+        className="bg-green-600 p-1 rounded-full text-slate-50"
+        size={30}
+      />,
+      <TbBrandNextjs
+        key="2"
+        className="bg-slate-800 text-slate-50 dark:bg-slate-50 dark:text-slate-800 p-1 rounded-full"
+        size={30}
+      />,
+      <FaReact
+        key="3"
+        className="text-blue-600 dark:bg-slate-50 p-1 rounded-full"
+        size={30}
+      />,
+    ],
+  },
+];
 
 export default function Projects() {
   return (
@@ -15,141 +123,9 @@ export default function Projects() {
           PROJECTS
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
-          <Link
-            href="https://udean777.github.io/portfoliolama/"
-            target="__blank"
-          >
-            <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30 ">
-              <img
-                loading="lazy"
-                className="w-full rounded-sm "
-                src="/project.jpeg"
-                alt="Card Image"
-              />
-              <div className="px-6 py-4">
-                <div className="font-bold text-md mb-2">My First Portfolio</div>
-                <div className="flex gap-2">
-                  {" "}
-                  <FaBootstrap
-                    className="text-purple-600 p-1 rounded-full dark:bg-slate-50"
-                    size={30}
-                  />
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="https://jeketi-web.vercel.app/" target="__blank">
-            <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30">
-              <img
-                loading="lazy"
-                className="w-full rounded-sm "
-                src="/projects2.png"
-                alt="Card Image"
-              />
-              <div className="px-6 py-4">
-                <div className="font-bold text-md mb-2">Clone Landing Page</div>
-                <div className="flex gap-2">
-                  {" "}
-                  <TbBrandTailwind
-                    className="text-blue-500 p-1 rounded-full dark:bg-slate-50"
-                    size={30}
-                  />
-                  <FaReact
-                    className="text-blue-600 dark:bg-slate-50 p-1 rounded-full"
-                    size={30}
-                  />
-                  <TbBrandNextjs
-                    className="text-slate-800 dark:bg-slate-50 dark:text-slate-800 p-1 rounded-full"
-                    size={30}
-                  />
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="https://udean.vercel.app/" target="__blank">
-            <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30">
-              <img
-                loading="lazy"
-                className="w-full rounded-sm "
-                src="/project3.png"
-                alt="Card Image"
-              />
-              <div className="px-6 py-4">
-                <div className="font-bold text-md mb-2">
-                  My Second Portfolio
-                </div>
-                <div className="flex gap-2">
-                  {" "}
-                  <TbBrandTailwind
-                    className="text-blue-500 p-1 rounded-full dark:bg-slate-50"
-                    size={30}
-                  />
-                  <FaReact
-                    className="text-blue-600 dark:bg-slate-50 p-1 rounded-full"
-                    size={30}
-                  />
-                  <TbBrandNextjs
-                    className="text-slate-800 dark:bg-slate-50 dark:text-slate-800 p-1 rounded-full"
-                    size={30}
-                  />
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="https://github.com/Udean777/todo-deploy" target="__blank">
-            <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30">
-              <FaGithub className="flex justify-center m-auto p-2" size={106} />
-              <div className="px-6 py-4">
-                <div className="font-bold text-md mb-2">To Do List</div>
-                <div className="flex gap-2">
-                  {" "}
-                  <TbBrandMongodb
-                    className="bg-green-600 p-1 rounded-full text-slate-50"
-                    size={30}
-                  />
-                  <SiExpress
-                    className="bg-slate-800 text-slate-50 dark:bg-slate-50 dark:text-slate-800 p-1 rounded-full"
-                    size={30}
-                  />
-                  <FaReact
-                    className="text-blue-600 dark:bg-slate-50 p-1 rounded-full"
-                    size={30}
-                  />
-                  <FaNodeJs
-                    className="text-green-500 bg-slate-500 p-1 rounded-full"
-                    size={30}
-                  />
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link href="https://github.com/Udean777/next-crud" target="__blank">
-            <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30">
-              <FaGithub className="flex justify-center m-auto p-2" size={106} />
-              <div className="px-6 py-4">
-                <div className="font-bold text-md mb-2">CRUD w/Next JS</div>
-                <div className="flex gap-2">
-                  {" "}
-                  <TbBrandMongodb
-                    className="bg-green-600 p-1 rounded-full text-slate-50"
-                    size={30}
-                  />
-                  <TbBrandNextjs
-                    className="bg-slate-800 text-slate-50 dark:bg-slate-50 dark:text-slate-800 p-1 rounded-full"
-                    size={30}
-                  />
-                  <FaReact
-                    className="text-blue-600 dark:bg-slate-50 p-1 rounded-full"
-                    size={30}
-                  />
-                </div>
-              </div>
-            </div>
-          </Link>
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
         </div>
       </div>
     </div>

@@ -1,13 +1,23 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import {
-  FaGithub,
-  FaWhatsapp,
-  FaInstagram,
-  FaLinkedinIn,
-  FaAt,
-} from "react-icons/fa";
+import socialLinks from "./socialLinks";
 import Link from "next/link";
+import ContactMe from "../components/contactMe";
+
+const SocialLink = ({ icon, label, href, colorClass, borderColorClass }) => {
+  return (
+    <Link
+      href={href}
+      target="__blank"
+      className={`w-44 my-5 overflow-hidden shadow-sm rounded-3xl hover:scale-105 text-slate-600 dark:text-slate-200 bg-transparent dark:hover:bg-transparent hover:bg-transparent hover:${colorClass} border-2 border-slate-600 dark:border-slate-200 dark:hover:${colorClass} hover:${borderColorClass} dark:hover:${borderColorClass} transition ease-in`}
+    >
+      {icon}
+      <span className="flex justify-center pb-2 font-sans font-bold">
+        {label}
+      </span>
+    </Link>
+  );
+};
 
 export default function page() {
   return (
@@ -19,77 +29,12 @@ export default function page() {
           CONTACT
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <Link
-            href="https://github.com/Udean777"
-            target="__blank"
-            className="w-44 my-5 overflow-hidden shadow-sm rounded-3xl  hover:scale-105
-           dark:text-white dark:hover:text-purple-600  bg-transparent dark:bg-transparent
-            dark:hover:bg-transparent hover:bg-transparent hover:text-purple-600 border-2
-             border-zinc-500 dark:border-white dark:hover:border-purple-600  hover:border-purple-600  transition ease-in"
-          >
-            <FaGithub className="m-auto w-auto py-5" size={150} />
-            <span className="flex justify-center pb-2 font-sans font-bold">
-              GitHub
-            </span>
-          </Link>
-
-          <Link
-            href="https://www.instagram.com/ssajudn/"
-            target="__blank"
-            className="w-44 my-5 overflow-hidden shadow-sm rounded-3xl  hover:scale-105
-           dark:text-white dark:hover:text-rose-600  bg-transparent dark:bg-transparent
-            dark:hover:bg-transparent hover:bg-transparent hover:text-rose-600 border-2
-             border-zinc-500 dark:border-white dark:hover:border-rose-600 hover:border-rose-600 transition ease-in"
-          >
-            <FaInstagram className="m-auto w-auto py-5" size={150} />
-            <span className="flex justify-center pb-2 font-sans font-bold">
-              Instagram
-            </span>
-          </Link>
-
-          <Link
-            href="https://www.linkedin.com/in/sajudin-ma-ruf-b9ba01265/"
-            target="__blank"
-            className="w-44 my-5 overflow-hidden shadow-sm rounded-3xl  hover:scale-105
-           dark:text-white dark:hover:text-blue-800  bg-transparent dark:bg-transparent
-            dark:hover:bg-transparent hover:bg-transparent hover:text-blue-800  border-2
-             border-zinc-500 dark:border-white dark:hover:border-blue-800 hover:border-blue-800 transition ease-in"
-          >
-            <FaLinkedinIn className="m-auto w-auto py-5" size={150} />
-            <span className="flex justify-center pb-2 font-sans font-bold">
-              LinkedIn
-            </span>
-          </Link>
-
-          <Link
-            href="https://wa.me/6285174363671"
-            target="__blank"
-            className="w-44 my-5 overflow-hidden shadow-sm rounded-3xl  hover:scale-105
-           dark:text-white dark:hover:text-green-600  bg-transparent dark:bg-transparent
-            dark:hover:bg-transparent hover:bg-transparent hover:text-green-600 border-2
-             border-zinc-500 dark:border-white dark:hover:border-green-600  hover:border-green-600 transition ease-in"
-          >
-            <FaWhatsapp className="m-auto w-auto py-5" size={150} />
-            <span className="flex justify-center pb-2 font-sans font-bold">
-              WhatsApp
-            </span>
-          </Link>
-
-          <Link
-            href="https://www.threads.net/@ssajudn"
-            target="__blank"
-            className="w-44 my-5 overflow-hidden shadow-sm rounded-3xl
-           dark:text-white  bg-transparent dark:bg-transparent
-            dark:hover:bg-transparent hover:bg-transparent border-2
-             border-zinc-500 dark:border-white hover:scale-105 ho transition ease-in"
-          >
-            <FaAt className="m-auto w-auto py-5" size={150} />
-            <span className="flex justify-center pb-2 font-sans font-bold">
-              Threads
-            </span>
-          </Link>
+          {socialLinks.map((link, index) => (
+            <SocialLink key={index} {...link} />
+          ))}
         </div>
       </div>
+      <ContactMe />
     </div>
   );
 }

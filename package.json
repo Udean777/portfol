@@ -16,6 +16,7 @@
     "eslint-config-next": "13.4.6",
     "hamburgers": "^1.2.1",
     "js-base64": "^3.7.5",
+    "mongoose": "^7.4.2",
     "next": "13.4.6",
     "next-theme": "^0.1.5",
     "next-themes": "^0.2.1",
