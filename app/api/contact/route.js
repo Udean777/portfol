@@ -2,6 +2,7 @@ import connectDB from "@/app/lib/mongodb";
 import Contact from "@/app/models/contact";
 import mongoose from "mongoose";
 import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 export async function POST(req) {
   const { fullname, email, message } = await req.json();

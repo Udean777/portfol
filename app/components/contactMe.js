@@ -38,16 +38,14 @@ function ContactMe() {
         </h1>
         <div className="backdrop-blur-md bg-blue-700/10 dark:bg-blue-900/10 dark:text-slate-50 px-10 py-10 rounded-lg">
           <div>
-            <h3 className="text-xl font-bold">
-              Give me your message for me, or critics about my website
-            </h3>
+            <h3 className="text-xl font-bold">What's on your mind :</h3>
           </div>
           <form
             onSubmit={handleSubmit}
             className="py-4 mt-4 border-t flex flex-col gap-5"
           >
             <div>
-              <label htmlFor="fullname">Full name :</label>
+              <label htmlFor="fullname">Your name :</label>
               <input
                 onChange={(e) => setFullname(e.target.value)}
                 value={fullname}

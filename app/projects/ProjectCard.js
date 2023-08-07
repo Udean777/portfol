@@ -7,7 +7,7 @@ const ProjectCard = ({ title, imageSrc, href, icon }) => {
       <div className="block w-full group hover:scale-105 transition ease-in rounded-xl overflow-hidden shadow-md backdrop-blur-sm bg-zinc-200/30">
         <img
           loading="lazy"
-          className="w-full rounded-sm h-28"
+          className="w-full rounded-sm lg:h-24 md:h-24 h-36"
           src={imageSrc}
           alt={title}
         />
