@@ -1,4 +1,4 @@
-import Particle from "./components/Particles";
+import Particle from "../components/Particles";
 import "./globals.css";
 
 export const metadata = {

@@ -1,7 +1,7 @@
 import React from "react";
-import NavPills from "../components/NavPills";
+import NavPills from "../../components/NavPills";
 import "animate.css";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import tabs from "./skills";
 
 export default function Skills() {

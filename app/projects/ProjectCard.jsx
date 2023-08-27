@@ -1,13 +1,14 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import ProjectCard from "./ProjectCard";
-import { TbBrandMongodb, TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
-import { FaBootstrap, FaNodeJs, FaReact } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import "animate.css";
+const { FaBootstrap, FaReact, FaNodeJs } = require("react-icons/fa");
+const { SiExpress } = require("react-icons/si");
+const {
+  TbBrandTailwind,
+  TbBrandNextjs,
+  TbBrandMongodb,
+} = require("react-icons/tb");
 
 const projects = [
   {
+    id: 1,
     title: "My First Portfolio",
     imageSrc: "/project.jpeg",
     href: "https://udean777.github.io/portfoliolama/",
@@ -20,6 +21,7 @@ const projects = [
     ],
   },
   {
+    id: 2,
     title: "Clone Landing Page",
     imageSrc: "/projects2.png",
     href: "https://jeketi-web.vercel.app/",
@@ -42,6 +44,7 @@ const projects = [
     ],
   },
   {
+    id: 3,
     title: "My Second Portfolio",
     imageSrc: "/project3.png",
     href: "https://udean.vercel.app/",
@@ -64,6 +67,7 @@ const projects = [
     ],
   },
   {
+    id: 4,
     title: "To Do List",
     imageSrc: "/unfinished.png",
     href: "https://github.com/Udean777/todo-deploy",
@@ -91,6 +95,7 @@ const projects = [
     ],
   },
   {
+    id: 5,
     title: "CRUD w/NextJS",
     imageSrc: "/unfinished.png",
     href: "https://github.com/Udean777/next-crud",
@@ -114,20 +119,4 @@ const projects = [
   },
 ];
 
-export default function Projects() {
-  return (
-    <div className="min-h-screen">
-      <Navbar />
-      <div className="m-auto py-5 sm:py-10 max-w-6xl px-4 sm:px-6 md:px-8 animate__animated animate__fadeInDown text-stone-800 dark:text-stone-200 overflow-hidden">
-        <h1 className="font-bold border-l-4 border-blue-500 text-3xl sm:text-4xl md:text-3xl mb-6 sm:mb-8">
-          PROJECTS
-        </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
+export default projects;
