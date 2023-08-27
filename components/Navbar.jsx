@@ -64,6 +64,7 @@ const Navbar = () => {
             <NavLink href="/" text="Home" />
             <NavLink href="/about" text="About" />
             <NavLink href="/skills" text="Skills" />
+            <NavLink href="/projects" text="Projects" />
             <NavLink href="/contact" text="Contact" />
           </div>
         </div>
