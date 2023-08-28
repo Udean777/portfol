@@ -11,6 +11,7 @@ const projects = [
     id: 1,
     title: "My First Portfolio",
     imageSrc: "/project.jpeg",
+    alt: "project1",
     href: "https://udean777.github.io/portfoliolama/",
     icon: [
       <FaBootstrap
@@ -24,6 +25,7 @@ const projects = [
     id: 2,
     title: "Clone Landing Page",
     imageSrc: "/projects2.png",
+    alt: "project2",
     href: "https://jeketi-web.vercel.app/",
     icon: [
       <TbBrandTailwind
@@ -47,6 +49,7 @@ const projects = [
     id: 3,
     title: "My Second Portfolio",
     imageSrc: "/project3.png",
+    alt: "project3",
     href: "https://udean.vercel.app/",
     icon: [
       <TbBrandTailwind
@@ -70,6 +73,7 @@ const projects = [
     id: 4,
     title: "To Do List",
     imageSrc: "/unfinished.png",
+    alt: "project4",
     href: "https://github.com/Udean777/todo-deploy",
     icon: [
       <TbBrandMongodb
@@ -98,6 +102,7 @@ const projects = [
     id: 5,
     title: "CRUD w/NextJS",
     imageSrc: "/unfinished.png",
+    alt: "project5",
     href: "https://github.com/Udean777/next-crud",
     icon: [
       <TbBrandMongodb
