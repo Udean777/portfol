@@ -11,12 +11,12 @@ export default function Hero() {
         <div className="mb-8 md:mb-0">
           <Image
             as="image"
-            src="/hero1.jpeg"
-            width={300}
+            src="/hero.jpeg"
+            width={400}
             height={300}
             alt="hero"
             loading="lazy"
-            className="rounded-full w-64 md:w-72 lg:w-80"
+            className="rounded-full w-64 md:w-72 lg:w-95 ring-4 ring-blue-500 ring-offset-4 ring-offset-slate-200 dark:ring-offset-slate-600"
           />
         </div>
         <div className="text-center lg:text-start md:ms-5 lg:ms-0 md:text-start lg:px-10 font-sans">

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import "../app/globals.css";
+import "@/app/globals.css";
 import "animate.css";
 import DarkModeToggle from "./DarkModeToggle";
 import Link from "next/link";

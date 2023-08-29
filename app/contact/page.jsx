@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import Navbar from "../../components/Navbar";
+import Navbar from "@/components/Navbar";
 import socialLinks from "./socialLinks";
-import ContactMe from "../../components/contactMe";
+import ContactMe from "@/components/contactMe";
 
 export default function page() {
   const [isModalOpen, setIsModalOpen] = useState(false);

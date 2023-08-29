@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import projects from "./ProjectCard";
-import ProjectModal1 from "@/components/modal/projectsModal/ProjectModal1";
 import "animate.css";
+import ProjectModal1 from "@/components/modal/projectsModal/ProjectModal1";
 import ProjectModal2 from "@/components/modal/projectsModal/ProjectModal2";
 import ProjectModal3 from "@/components/modal/projectsModal/ProjectModal3";
 import ProjectModal4 from "@/components/modal/projectsModal/ProjectModal4";

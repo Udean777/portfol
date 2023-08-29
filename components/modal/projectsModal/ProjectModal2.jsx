@@ -20,7 +20,7 @@ const ProjectModal2 = ({ closeModal }) => {
   return (
     <div
       className={`fixed inset-0 bottom-98 md:bottom-99 lg:bottom-0 flex items-center justify-center z-0 animate__animated ${
-        closing ? "animate__zoomOut" : "animate__zoomIn"
+        closing ? "animate__flipOutX" : "animate__flipInX"
       }`}
     >
       <div className="backdrop-blur-sm bg-slate-200/95 dark:bg-gray-800/95 p-8 rounded-lg shadow-lg">
